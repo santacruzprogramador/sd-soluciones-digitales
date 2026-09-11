@@ -1166,6 +1166,58 @@ p {
   text-align: center;
 }
 
+
+
+
+/*  */
+
+.promo-box {
+  max-width: 850px;
+  margin: 0 auto;
+/*   padding: 2rem 1.5rem;
+  text-align: center;
+  background: #0d1b2e;
+  border-radius: 16px; */
+}
+
+.promo-eyebrow {
+  margin: 0 0 0.75rem;
+  color: #fbbf24;
+ /*  font-size: 0.8rem; */
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.promo-text {
+  max-width: 750px;
+ /*  margin: 0 auto; */
+  color: #e2e8f0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.promo-text strong {
+  color: #fbbf24;
+  font-weight: 800;
+}
+
+.promo-action {
+  display: inline-block;
+/*   margin: 1.25rem 0 0; */
+  padding: 0.65rem 1rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: #4f46e5;
+  border-radius: 8px;
+}
+/*  */
+
+
+
+
+
 /* .promo-price {
   display: flex;
   flex-direction: column;
