@@ -8,13 +8,16 @@
   /* Texto */
   /* h1, h2, h3 (títulos principales, máximo contraste) */
   --text-main: #1f2937;
-  /*  (párrafos, texto de lectura, un poco más suave pero legible) */ 
+  /*  (párrafos, texto de lectura, un poco más suave pero legible) */
   --text-muted: #6b7280;
   --text-muted: #010203;
   /* texto sobre fondos oscuros (por ejemplo, dentro de botones, banners o tarjetas con fondo de color) */
   --text-light: #555555;
   --text-white: #ffffff;
   --card-text-color: #0f0f0f;
+
+  /* --- Color dorado (gold) para títulos h1, h2, h3 --- */
+  --gold-titles: #eeb90c;
 
   /* Fondos */
   /*  Es el fondo general de toda la página (un gris muy clarito). */
@@ -105,6 +108,7 @@ a:hover {
 h1, h2, h3 {
   margin: 0;
   line-height: 1.2;
+  color: var(--gold-titles);
 }
 
 img {
@@ -154,7 +158,6 @@ p {
   font-size: clamp(2rem, 5vw, 2.5rem);
   margin-bottom: 40px;
   padding-top: 45px;
-  color: var(--text-white);
 }
 
 .text-red {
@@ -190,7 +193,11 @@ p {
   background-color: #1e40af; /* tono más oscuro al pasar */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
+  color: var(--gold-titles);
+}
+
+h4, h5, h6 {
   color: var(--text-main);
 }
 
@@ -231,6 +238,8 @@ p {
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
+  color: var(--gold-titles);
+  font-weight: 800;
 }
 
 .menu-toggle {
@@ -267,9 +276,12 @@ p {
 .menu a {
   padding: 1rem;
   text-decoration: none;
+  color: var(--gold-titles);
   color: white;
   border-top: 1px solid #333;
-  text-align: center;
+  text-align: left;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .menu a:hover {
@@ -347,6 +359,7 @@ p {
   margin-right: auto;
   background: rgb(0 0 0 / 80%);
   border-radius: 15px;
+  border: 3px solid #ffcc10;
 
   /*
   background: rgba(15, 23, 42, 0.65);
@@ -359,7 +372,6 @@ p {
 }
 
 .hero-title {
-  color: #ffffff;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -459,7 +471,6 @@ p {
 
 .hero-benefit-slide h3 {
   margin: 0 0 0.25rem;
-  color: #e2e8f0;
   font-size: 1rem;
 }
 
@@ -554,7 +565,6 @@ p {
 
 .about-content h2 {
   margin: 0 0 1.25rem;
-  color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -647,6 +657,8 @@ p {
   object-fit: cover;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 3px solid #ffcc10;
+
 }
 
 .about-experience {
@@ -662,6 +674,8 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
   backdrop-filter: blur(12px);
+  border: 1px solid #ffcc10;
+
 }
 
 .about-experience strong {
