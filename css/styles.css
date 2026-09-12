@@ -332,6 +332,7 @@ p {
 } 
 
 /* ********** Hero ********** */
+/* ********** Hero ********** */
 .hero {
   min-height: 100vh;
   position: relative;
@@ -360,15 +361,6 @@ p {
   background: rgb(0 0 0 / 80%);
   border-radius: 15px;
   border: 3px solid #ffcc10;
-
-  /*
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
-  */
 }
 
 .hero-title {
@@ -429,7 +421,8 @@ p {
   transform: translateY(-2px);
 }
 
-/* Hero Benefits Slider */
+
+/* ********** Hero Benefits Slider ********** */
 .hero-benefits-slider {
   width: 100%;
   overflow: hidden;
@@ -469,9 +462,12 @@ p {
   font-size: 1.3rem;
 }
 
-.hero-benefit-slide h3 {
+/* Nueva clase porque el HTML ahora utiliza <strong class="benefit-title> */
+.benefit-title {
+  display: block;
   margin: 0 0 0.25rem;
   font-size: 1rem;
+  color: var(--gold-titles);
 }
 
 .hero-benefit-slide p {
@@ -482,15 +478,20 @@ p {
   line-height: 1.4;
 }
 
+
+/* ********** Animación ********** */
 @keyframes heroBenefitsSlider {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
 }
 
+
+/* ********** Tablet ********** */
 @media (min-width: 768px) {
   .hero {
     justify-content: space-between;
@@ -509,9 +510,7 @@ p {
       calc((100% - var(--max-width)) / 2 + 1rem)
     );
     margin-right: auto;
-
     width: 100%;
-    /* max-width: 550px; */
   }
 
   .hero-buttons {
@@ -530,6 +529,8 @@ p {
   }
 }
 
+
+/* ********** Desktop ********** */
 @media (min-width: 1024px) {
   .hero-benefit-slide {
     flex-basis: 300px;
