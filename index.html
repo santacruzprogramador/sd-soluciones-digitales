@@ -48,25 +48,51 @@
   <meta name="theme-color" content="#0f172a">
 
   <!-- DATOS ESTRUCTURADOS -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "SD Soluciones Digitales",
-    "description": "Desarrollo web para negocios, emprendedores y profesionales. Creamos páginas web, tiendas online y sitios modernos optimizados para Google.",
-    "url": "https://sd-soluciones-digitales.vercel.app/",
-    "telephone": "+54 9 3743 615520",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Jardín América",
-      "addressRegion": "Misiones",
-      "addressCountry": "AR"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://sd-soluciones-digitales.vercel.app/#business",
+      "name": "SD Soluciones Digitales",
+      "description": "Diseño y desarrollo web para negocios, emprendedores y profesionales en Misiones.",
+      "url": "https://sd-soluciones-digitales.vercel.app/",
+      "telephone": "+54 9 3743 615520",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jardín América",
+        "addressRegion": "Misiones",
+        "addressCountry": "AR"
+      },
+      "image": "https://sd-soluciones-digitales.vercel.app/assets/imagen/og-image.png",
+      "areaServed": [
+        "Jardín América",
+        "Misiones",
+        "Argentina"
+      ],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/solucionesdigitales40337/",
+        "https://www.tiktok.com/@soluciones_digitale",
+        "https://github.com/santacruzprogramador"
+      ]
     },
-    "image": "https://sd-soluciones-digitales.vercel.app/assets/imagen/hero-image-gradient.png",
-    "areaServed": ["Jardín América", "Misiones", "Argentina"],
-    "priceRange": "$$"
-  }
-  </script>
+    {
+      "@type": "Organization",
+      "@id": "https://sd-soluciones-digitales.vercel.app/#organization",
+      "name": "SD Soluciones Digitales",
+      "url": "https://sd-soluciones-digitales.vercel.app/",
+      "logo": "https://sd-soluciones-digitales.vercel.app/assets/imagen/og-image.png",
+      "sameAs": [
+        "https://www.instagram.com/solucionesdigitales40337/",
+        "https://www.tiktok.com/@soluciones_digitale",
+        "https://github.com/santacruzprogramador"
+      ]
+    }
+  ]
+}
+</script>
 
   <!-- ESTILOS CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -89,708 +115,914 @@
     </section>
   </header>
 
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <!-- Excelente H1 con SEO Local -->
-      <h1 class="hero-title">
-        Diseño y desarrollo web para negocios en Jardín América, Misiones
-      </h1>
-      <p class="hero-description">
-        Tu negocio necesita una presencia online profesional. Creamos páginas web para negocios, emprendedores y profesionales, con diseño responsive, buena velocidad de carga y una estructura preparada para buscadores.
-      </p>
-      <div class="hero-buttons">
-        <a href="#servicios" class="btn-hero btn-hero-primary">Contratar servicio</a>
-        <a href="#promociones" class="btn-hero btn-hero-secondary">Promociones</a>
-      </div>
-    </div>
+  <main>
 
-    <!-- SLIDER: Cambiados los h3 por <strong> + <p> para no arruinar la estructura de títulos de Google -->
-    <div class="hero-benefits-slider container" aria-label="Beneficios de nuestros servicios">
-      <div class="hero-benefits-track">
-        <!-- BLOQUE 1 -->
-        <div class="hero-benefit-slide">
-          <span class="hero-benefit-icon" aria-hidden="true">⚡</span>
-          <div>
-            <strong class="benefit-title">Web rápida</strong>
-            <p>Mejor experiencia para tus clientes y menos abandonos.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide">
-          <span class="hero-benefit-icon" aria-hidden="true">📱</span>
-          <div>
-            <strong class="benefit-title">Diseño responsive</strong>
-            <p>Tu página se adapta correctamente a celular, tablet y PC.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide">
-          <span class="hero-benefit-icon" aria-hidden="true">🔎</span>
-          <div>
-            <strong class="benefit-title">Optimizada para buscadores</strong>
-            <p>Una estructura preparada para mejorar tu presencia online.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide">
-          <span class="hero-benefit-icon" aria-hidden="true">🎯</span>
-          <div>
-            <strong class="benefit-title">Enfocada en resultados</strong>
-            <p>Diseñada para convertir visitas en consultas y potenciales clientes.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide">
-          <span class="hero-benefit-icon" aria-hidden="true">🛡️</span>
-          <div>
-            <strong class="benefit-title">Profesional y segura</strong>
-            <p>Transmití confianza con una web moderna y bien desarrollada.</p>
-          </div>
-        </div>
-
-        <!-- BLOQUE 2 (Duplicado para el bucle infinito) -->
-        <div class="hero-benefit-slide" aria-hidden="true">
-          <span class="hero-benefit-icon">⚡</span>
-          <div>
-            <strong class="benefit-title">Web rápida</strong>
-            <p>Mejor experiencia para tus clientes y menos abandonos.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide" aria-hidden="true">
-          <span class="hero-benefit-icon">📱</span>
-          <div>
-            <strong class="benefit-title">Diseño responsive</strong>
-            <p>Tu página se adapta correctamente a celular, tablet y PC.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide" aria-hidden="true">
-          <span class="hero-benefit-icon">🔎</span>
-          <div>
-            <strong class="benefit-title">Optimizada para Google</strong>
-            <p>Una estructura preparada para mejorar tu presencia online.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide" aria-hidden="true">
-          <span class="hero-benefit-icon">🎯</span>
-          <div>
-            <strong class="benefit-title">Enfocada en resultados</strong>
-            <p>Diseñada para convertir visitas en consultas y potenciales clientes.</p>
-          </div>
-        </div>
-        <div class="hero-benefit-slide" aria-hidden="true">
-          <span class="hero-benefit-icon">🛡️</span>
-          <div>
-            <strong class="benefit-title">Profesional y segura</strong>
-            <p>Transmití confianza con una web moderna y bien desarrollada.</p>
-          </div>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <!-- Excelente H1 con SEO Local -->
+        <h1 class="hero-title">
+          Diseño y desarrollo web para negocios en Jardín América, Misiones
+        </h1>
+        <p class="hero-description">
+          Tu negocio necesita una presencia online profesional. Creamos páginas web para negocios, emprendedores y profesionales, con diseño responsive, buena velocidad de carga y una estructura preparada para buscadores.
+        </p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn-hero btn-hero-primary">Contratar servicio</a>
+          <a href="#promociones" class="btn-hero btn-hero-secondary">Promociones</a>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <section id="acerca" class="about">
 
-    <div class="container section">
-
-      <div class="about-wrapper">
-
-        <!-- Contenido -->
-        <article class="about-content">
-
-          <span class="about-label">SOBRE MÍ</span>
-
-          <h2>
-              Desarrollo web para ayudar a tu negocio a crecer
-          </h2>
-
-          <p class="about-intro">
-            Tu página web tiene pocos segundos para transmitir confianza y dejar claro qué ofrece tu negocio.</p>
-          <p> 
-            Diseño y desarrollo sitios web de alto rendimiento, enfocados en reducir problemas que pueden afectar la experiencia de tus clientes: la lentitud de carga, los diseños que no se adaptan al celular o la información difícil de encontrar.
-          </p>
-
-          <p>
-            Mi objetivo es simple: que tu web trabaje por vos. Que cuando alguien entre,
-            entienda tu propuesta de valor al instante, confíe en tu marca.
-          </p>
-
-
-          <!-- Beneficios -->
-  <!--         <div class="about-benefits">
-
-            <div class="about-benefit">
-              <span class="about-benefit-icon" aria-hidden="true">✓</span>
-
-              <div>
-                <h3>Mobile First</h3>
-                <p>Diseñada primero para celulares.</p>
-              </div>
+      <!-- SLIDER: Cambiados los h3 por <strong> + <p> para no arruinar la estructura de títulos de Google -->
+      <div class="hero-benefits-slider container" aria-label="Beneficios de nuestros servicios">
+        <div class="hero-benefits-track">
+          <!-- BLOQUE 1 -->
+          <div class="hero-benefit-slide">
+            <span class="hero-benefit-icon" aria-hidden="true">⚡</span>
+            <div>
+              <strong class="benefit-title">Web rápida</strong>
+              <p>Mejor experiencia para tus clientes y menos abandonos.</p>
             </div>
-
-
-            <div class="about-benefit">
-              <span class="about-benefit-icon" aria-hidden="true">⚡</span>
-
-              <div>
-                <h3>Alto rendimiento</h3>
-                <p>Webs rápidas y optimizadas.</p>
-              </div>
+          </div>
+          <div class="hero-benefit-slide">
+            <span class="hero-benefit-icon" aria-hidden="true">📱</span>
+            <div>
+              <strong class="benefit-title">Diseño responsive</strong>
+              <p>Tu página se adapta correctamente a celular, tablet y PC.</p>
             </div>
-
-
-            <div class="about-benefit">
-              <span class="about-benefit-icon" aria-hidden="true">⌘</span>
-
-              <div>
-                <h3>A medida</h3>
-                <p>Sin depender de plantillas genéricas.</p>
-              </div>
+          </div>
+          <div class="hero-benefit-slide">
+            <span class="hero-benefit-icon" aria-hidden="true">🔎</span>
+            <div>
+              <strong class="benefit-title">Optimizada para buscadores</strong>
+              <p>Una estructura preparada para mejorar tu presencia online.</p>
             </div>
-
-
-            <div class="about-benefit">
-              <span class="about-benefit-icon" aria-hidden="true">↗</span>
-
-              <div>
-                <h3>Orientada a resultados</h3>
-                <p>Diseñada para facilitar el contacto.</p>
-              </div>
+          </div>
+          <div class="hero-benefit-slide">
+            <span class="hero-benefit-icon" aria-hidden="true">🎯</span>
+            <div>
+              <strong class="benefit-title">Enfocada en resultados</strong>
+              <p>Diseñada para convertir visitas en consultas y potenciales clientes.</p>
             </div>
-
-          </div> -->
-
-        </article>
-
-
-        <!-- Imagen -->
-        <div class="about-visual">
-
-          <div class="about-image-wrapper">
-
-            <img
-              src="assets/imagen/about-photo-perfil.webp"
-              alt="José Santacruz, desarrollador web en Jardín América, Misiones"
-              class="about-image"
-              loading="lazy"
-            >
-
-            <div class="about-experience">
-              <strong>+5</strong>
-              <span>años de experiencia</span>
+          </div>
+          <div class="hero-benefit-slide">
+            <span class="hero-benefit-icon" aria-hidden="true">🛡️</span>
+            <div>
+              <strong class="benefit-title">Profesional y segura</strong>
+              <p>Transmití confianza con una web moderna y bien desarrollada.</p>
             </div>
-
           </div>
 
-  <!--         <div class="about-tech">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-          </div> -->
+          <!-- BLOQUE 2 (Duplicado para el bucle infinito) -->
+          <div class="hero-benefit-slide" aria-hidden="true">
+            <span class="hero-benefit-icon">⚡</span>
+            <div>
+              <strong class="benefit-title">Web rápida</strong>
+              <p>Mejor experiencia para tus clientes y menos abandonos.</p>
+            </div>
+          </div>
+          <div class="hero-benefit-slide" aria-hidden="true">
+            <span class="hero-benefit-icon">📱</span>
+            <div>
+              <strong class="benefit-title">Diseño responsive</strong>
+              <p>Tu página se adapta correctamente a celular, tablet y PC.</p>
+            </div>
+          </div>
+          <div class="hero-benefit-slide" aria-hidden="true">
+            <span class="hero-benefit-icon">🔎</span>
+            <div>
+              <strong class="benefit-title">Optimizada para Google</strong>
+              <p>Una estructura preparada para mejorar tu presencia online.</p>
+            </div>
+          </div>
+          <div class="hero-benefit-slide" aria-hidden="true">
+            <span class="hero-benefit-icon">🎯</span>
+            <div>
+              <strong class="benefit-title">Enfocada en resultados</strong>
+              <p>Diseñada para convertir visitas en consultas y potenciales clientes.</p>
+            </div>
+          </div>
+          <div class="hero-benefit-slide" aria-hidden="true">
+            <span class="hero-benefit-icon">🛡️</span>
+            <div>
+              <strong class="benefit-title">Profesional y segura</strong>
+              <p>Transmití confianza con una web moderna y bien desarrollada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="acerca" class="about">
+
+      <div class="container section">
+
+        <div class="about-wrapper">
+
+          <!-- Contenido -->
+          <article class="about-content">
+
+            <span class="about-label">SOBRE MÍ</span>
+
+            <h2>
+                Desarrollo web para ayudar a tu negocio a crecer
+            </h2>
+
+            <p class="about-intro">
+              Tu página web tiene pocos segundos para transmitir confianza y dejar claro qué ofrece tu negocio.</p>
+            <p> 
+              Diseño y desarrollo sitios web de alto rendimiento, enfocados en reducir problemas que pueden afectar la experiencia de tus clientes: la lentitud de carga, los diseños que no se adaptan al celular o la información difícil de encontrar.
+            </p>
+
+            <p>
+              Mi objetivo es simple: que tu web trabaje por vos. Que cuando alguien entre,
+              entienda tu propuesta de valor al instante, confíe en tu marca.
+            </p>
+
+
+            <!-- Beneficios -->
+    <!--         <div class="about-benefits">
+
+              <div class="about-benefit">
+                <span class="about-benefit-icon" aria-hidden="true">✓</span>
+
+                <div>
+                  <h3>Mobile First</h3>
+                  <p>Diseñada primero para celulares.</p>
+                </div>
+              </div>
+
+
+              <div class="about-benefit">
+                <span class="about-benefit-icon" aria-hidden="true">⚡</span>
+
+                <div>
+                  <h3>Alto rendimiento</h3>
+                  <p>Webs rápidas y optimizadas.</p>
+                </div>
+              </div>
+
+
+              <div class="about-benefit">
+                <span class="about-benefit-icon" aria-hidden="true">⌘</span>
+
+                <div>
+                  <h3>A medida</h3>
+                  <p>Sin depender de plantillas genéricas.</p>
+                </div>
+              </div>
+
+
+              <div class="about-benefit">
+                <span class="about-benefit-icon" aria-hidden="true">↗</span>
+
+                <div>
+                  <h3>Orientada a resultados</h3>
+                  <p>Diseñada para facilitar el contacto.</p>
+                </div>
+              </div>
+
+            </div> -->
+
+          </article>
+
+
+          <!-- Imagen -->
+          <div class="about-visual">
+
+            <div class="about-image-wrapper">
+
+              <img
+                src="assets/imagen/about-photo-perfil.webp"
+                alt="José Santacruz, desarrollador web en Jardín América, Misiones"
+                class="about-image"
+                loading="lazy"
+              >
+
+              <div class="about-experience">
+                <strong>+5</strong>
+                <span>años de experiencia</span>
+              </div>
+
+            </div>
+
+    <!--         <div class="about-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+            </div> -->
+
+          </div>
 
         </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="servicios" class="services">
-    <div class="container">
-      <h2 class="h2-center">Planes de desarrollo web para tu negocio</h2>
-      
-      <div class="pricing-cards">
-        
-        <!-- PLAN GOLD -->
-        <article class="card gold-card">
-          <header class="card-header">
-            <h3>PLAN GOLD</h3>
-          </header>
-          
-          <div class="card-body">
-            <div class="ideal-for">
-              <h4>IDEAL PARA:</h4>
-              <p>Perfecto para arrancar con una web profesional sin rodeos. Landing page ultrarrápida, código limpio y optimizada para convertir visitas en clientes.</p>
-            </div>
-            
-            <div class="includes">
-              <h4>INCLUYE:</h4>
-              <ul class="feature-list">
-                <li>Landing page de una página larga con todo el contenido</li>
-                <li>Hasta 4 secciones: Inicio, Acerca, Servicios y Contacto</li>
-                <li>Botón directo a WhatsApp</li>
-                <li>Formulario de contacto integrado</li>
-                <li>Imágenes optimizadas para carga rápida</li>
-                <li>Integración de redes sociales</li>
-                <li>Mapa de ubicación de Google</li>
-              </ul>
-            </div>
-            
-            <div class="pricing-details">
-              <div class="price-col">
-                <span class="label">PRECIO REAL</span>
-                <span class="value old-price">$ 350.000</span>
-              </div>
-              <div class="price-col">
-                <span class="label">DESCUENTO</span>
-                <span class="value green-text">40% OFF</span>
-              </div>
-              <div class="price-col">
-                <span class="label">AHORRAS</span>
-                <span class="value green-text">$ 210.000</span>
-              </div>
-            </div>
-          </div>
-          
-          <footer class="card-footer">
-            <a href="https://wa.me/5493743615520?text=Hola,%20quiero%20contratar%20el%20Plan%20Gold." target="_blank" rel="noopener noreferrer" class="checkout-box gold-checkout">
-              <div class="tag-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-              </div>
-              <div class="checkout-text">
-                <span class="solo-pagas">SOLO PAGAS</span>
-                <span class="final-price">$ 140.000 ARS</span>
-              </div>
-            </a>
-          </footer>
-        </article>
-
-        <!-- PLAN DIAMOND -->
-        <article class="card  emerald-card">
-          <header class="card-header">
-            <h3>PLAN EMERALD</h3>
-          </header>
-          
-          <div class="card-body">
-            <div class="ideal-for">
-              <h4>IDEAL PARA:</h4>
-              <p>Para negocios que necesitan una presencia online más robusta. Diseño personalizado, SEO técnico avanzado y mejor posicionamiento en Google.</p>
-            </div>
-            
-            <div class="includes">
-              <h4>INCLUYE:</h4>
-              <ul class="feature-list">
-                <li class="highlight-green">Incluye todo lo del PLAN GOLD</li>
-                <li>Hasta 6 secciones o páginas independientes</li>
-                <li>Optimización SEO técnico (aparición en Google)</li>
-                <li>Diseño de interfaz y componentes personalizados</li>
-                <li>Perfil de Google Business optimizado (Google Maps)</li>
-                <li>Velocidad de carga impecable según Google PageSpeed</li>
-              </ul>
-            </div>
-            
-            <div class="pricing-details">
-              <div class="price-col">
-                <span class="label">PRECIO REAL</span>
-                <span class="value old-price">$ 550.000</span>
-              </div>
-              <div class="price-col">
-                <span class="label">DESCUENTO</span>
-                <span class="value green-text">40% OFF</span>
-              </div>
-              <div class="price-col">
-                <span class="label">AHORRAS</span>
-                <span class="value green-text">$ 330.000</span>
-              </div>
-            </div>
-          </div>
-          
-          <footer class="card-footer">
-            <a href="https://wa.me/5493743615520?text=Hola,%20quiero%20contratar%20el%20Plan%20Diamond." target="_blank" rel="noopener noreferrer" class="checkout-box emerald-checkout">
-              <div class="tag-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-              </div>
-              <div class="checkout-text">
-                <span class="solo-pagas">SOLO PAGAS</span>
-                <span class="final-price">$ 220.000 ARS</span>
-              </div>
-            </a>
-          </footer>
-        </article>
-
-        <!-- PLAN EMERALD / E-COMMERCE -->
-        <article class="card diamond-card">
-          <header class="card-header">
-            <span class="popular-badge">VENTAS</span>
-            <h3>PLAN DIAMOND</h3>
-          </header>
-          
-          <div class="card-body">
-            <div class="ideal-for">
-              <h4>IDEAL PARA:</h4>
-              <p>Pensado para negocios y marcas que quieren vender productos online. Catálogo digital optimizado para pedidos rápidos vía WhatsApp o carrito directo.</p>
-            </div>
-            
-            <div class="includes">
-              <h4>INCLUYE:</h4>
-              <ul class="feature-list">
-                <li class="highlight-green">Incluye todo lo del PLAN EMERALD</li>
-                <li>Catálogo de productos organizado por categorías</li>
-                <li>Buscador y filtros integrados para productos</li>
-                <li>Botonera de pedido directo al carrito / WhatsApp</li>
-                <li>Integración con Mercado Pago (opcional)</li>
-                <li>Panel o capacitación básica para actualizar tu stock</li>
-              </ul>
-            </div>
-<!--             
-            <div class="pricing-details">
-              <div class="price-col">
-                <span class="label">PRECIO REAL</span>
-                <span class="value old-price">$ 850.000</span>
-              </div>
-              <div class="price-col">
-                <span class="label">DESCUENTO</span>
-                <span class="value green-text">40% OFF</span>
-              </div>
-              <div class="price-col">
-                <span class="label">AHORRAS</span>
-                <span class="value green-text">$ 510.000</span>
-              </div>
-            </div>
-             -->
-          </div>
-          
-          <footer class="card-footer">
-            <a href="https://wa.me/5493743615520?text=Hola,%20quiero%20contratar%20el%20Plan%20Emerald%20(E-Commerce)." target="_blank" rel="noopener noreferrer" class="checkout-box diamond-checkout">
-              <div class="tag-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-              </div>
-              <div class="checkout-text">
-                <span class="solo-pagas">CONTRATAR PLAN</span>
-                <span class="final-price">$ 840.000 ARS</span>
-              </div>
-            </a>
-          </footer>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-<!--   
-  <section id="portafolio" class="portfolio">
-
-    <div class="section container">
-      
-      <h2 class="h2-center">Trabajos terminados</h2>
-
-      <div class="portfolio-container">
-        
-        <article class="portfolio-card diamond-card">
-          <span class="portfolio-title"> DIAMOND</span>
-          
-          <div class="portfolio-preview">
-            
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
-                
-                <image
-                  href="assets/imagen/santacruzgestodesktop.png"
-                  x="25"
-                  y="15"
-                  width="250"
-                  height="160"
-                  clip-path="url(#screen-pc)"
-                  preserveAspectRatio="xMidYMid slice" />
-                
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
-                
-                <image href="assets/imagen/santacruzgestormobile.png" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-
-          </div>
-
-          <div class="card-content">
-            <h2>Plataforma E-Commerce</h2>
-            <a href="https://taskflow-santacruz.vercel.app/" class="btn" target="_blank" rel="noopener">
-              Ver página
-            </a>
-          </div>
-
-        </article>
-        
-        <article class="portfolio-card gold-card">
-          <span class="portfolio-title"> GOLD</span>
-          
-          <div class="portfolio-preview">
-            
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
-                
-                <image href="assets/imagen/santacruzdesktop.png" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
-                
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
-                
-                <image href="assets/imagen/santacruzmobile.png" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-
-          </div>
-
-          <div class="card-content">
-            <h2>Plataforma E-Commerce</h2>
-            <a href="https://santacruzprogramador.github.io/portfolio-santacruz/" class="btn" target="_blank" rel="noopener">
-              Ver página
-            </a>
-          </div>
-
-        </article>
-        
-        <article class="portfolio-card diamond-card">
-          <span class="portfolio-title"> DIAMOND</span>
-          
-          <div class="portfolio-preview">
-            
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
-                
-                <image href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=250&h=160&q=80" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
-                
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
-                
-                <image href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=130&h=240&q=80" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-
-          </div>
-
-          <div class="card-content">
-            <h2>Plataforma E-Commerce</h2>
-            <a href="#" class="btn">Ver página</a>
-          </div>
-
-        </article>
-        
-        <article class="portfolio-card gold-card">
-          <span class="portfolio-title"> GOLD</span>
-          
-          <div class="portfolio-preview">
-            
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
-                
-                <image href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=250&h=160&q=80" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
-                
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
-                
-                <image href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=130&h=240&q=80" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-
-          </div>
-
-          <div class="card-content">
-            <h2>Plataforma E-Commerce</h2>
-            <a href="#" class="btn">Ver página</a>
-          </div>
-
-        </article>
-        
-        <article class="portfolio-card diamond-card">
-          <span class="portfolio-title"> DIAMOND</span>
-          
-          <div class="portfolio-preview">
-            
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
-                
-                <image href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=250&h=160&q=80" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
-                
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
-                
-                <image href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=130&h=240&q=80" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-
-          </div>
-
-          <div class="card-content">
-            <h2>Plataforma E-Commerce</h2>
-            <a href="#" class="btn">Ver página</a>
-          </div>
-
-        </article>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
-  --> 
-
-  <section id="promociones" class="promotions">
-    <div class="section container">
-      
-    <h2 class="h2-center promo-eyebrow">OFERTA POR TIEMPO LIMITADO</h2>
-
-    <div class="promo-box sesction">
-      
-
-      <p class="promo-text">
-        Elegí una de nuestras páginas y la adaptamos a tu negocio con tu
-        <strong>logo, colores, contenido e información de contacto.</strong>
-      </p>
-
-      <p class="promo-action">
-        Elegí tu página y empezá tu proyecto.
-      </p>
-    </div>
-
-
-
-      <div class="portfolio-container">
-
-        <article class="portfolio-card gold-card">
-          <span class="portfolio-title"> GOLD</span>
-                    
-          <div class="portfolio-preview">
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc-gold">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
-                <image href="assets/imagen/lexora-gold-01-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile-gold">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
-                <image href="assets/imagen/lexora-gold-01-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-content-promotions">
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2 class="h2-center">Planes de desarrollo web para tu negocio</h2>
+        
+        <div class="pricing-cards">
+          
+          <!-- PLAN GOLD -->
+          <article class="card gold-card">
+            <header class="card-header">
+              <h3>PLAN GOLD</h3>
+            </header>
             
+            <div class="card-body">
+              <div class="ideal-for">
+                <h4>IDEAL PARA:</h4>
+                <p>Perfecto para arrancar con una web profesional sin rodeos. Landing page ultrarrápida, código limpio y optimizada para convertir visitas en clientes.</p>
+              </div>
+              
+              <div class="includes">
+                <h4>INCLUYE:</h4>
+                <ul class="feature-list">
+                  <li>Landing page de una página larga con todo el contenido</li>
+                  <li>Hasta 4 secciones: Inicio, Acerca, Servicios y Contacto</li>
+                  <li>Botón directo a WhatsApp</li>
+                  <li>Formulario de contacto integrado</li>
+                  <li>Imágenes optimizadas para carga rápida</li>
+                  <li>Integración de redes sociales</li>
+                  <li>Mapa de ubicación de Google</li>
+                </ul>
+              </div>
+              
+              <div class="pricing-details">
+                <div class="price-col">
+                  <span class="label">PRECIO REAL</span>
+                  <span class="value old-price">$ 350.000</span>
+                </div>
+                <div class="price-col">
+                  <span class="label">DESCUENTO</span>
+                  <span class="value green-text">40% OFF</span>
+                </div>
+                <div class="price-col">
+                  <span class="label">AHORRAS</span>
+                  <span class="value green-text">$ 210.000</span>
+                </div>
+              </div>
+            </div>
+            
+            <footer class="card-footer">
+              <a href="https://wa.me/5493743615520?text=Hola,%20quiero%20contratar%20el%20Plan%20Gold." target="_blank" rel="noopener noreferrer" class="checkout-box gold-checkout">
+                <div class="tag-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                </div>
+                <div class="checkout-text">
+                  <span class="solo-pagas">SOLO PAGAS</span>
+                  <span class="final-price">$ 140.000 ARS</span>
+                </div>
+              </a>
+            </footer>
+          </article>
+
+          <!-- PLAN DIAMOND -->
+          <article class="card  emerald-card">
+            <header class="card-header">
+              <h3>PLAN EMERALD</h3>
+            </header>
+            
+            <div class="card-body">
+              <div class="ideal-for">
+                <h4>IDEAL PARA:</h4>
+                <p>Para negocios que necesitan una presencia online más robusta. Diseño personalizado, SEO técnico avanzado y mejor posicionamiento en Google.</p>
+              </div>
+              
+              <div class="includes">
+                <h4>INCLUYE:</h4>
+                <ul class="feature-list">
+                  <li class="highlight-green">Incluye todo lo del PLAN GOLD</li>
+                  <li>Hasta 6 secciones o páginas independientes</li>
+                  <li>Optimización SEO técnico (aparición en Google)</li>
+                  <li>Diseño de interfaz y componentes personalizados</li>
+                  <li>Perfil de Google Business optimizado (Google Maps)</li>
+                  <li>Velocidad de carga impecable según Google PageSpeed</li>
+                </ul>
+              </div>
+              
+              <div class="pricing-details">
+                <div class="price-col">
+                  <span class="label">PRECIO REAL</span>
+                  <span class="value old-price">$ 550.000</span>
+                </div>
+                <div class="price-col">
+                  <span class="label">DESCUENTO</span>
+                  <span class="value green-text">40% OFF</span>
+                </div>
+                <div class="price-col">
+                  <span class="label">AHORRAS</span>
+                  <span class="value green-text">$ 330.000</span>
+                </div>
+              </div>
+            </div>
+            
+            <footer class="card-footer">
+              <a href="https://wa.me/5493743615520?text=Hola,%20quiero%20contratar%20el%20Plan%20Diamond." target="_blank" rel="noopener noreferrer" class="checkout-box emerald-checkout">
+                <div class="tag-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                </div>
+                <div class="checkout-text">
+                  <span class="solo-pagas">SOLO PAGAS</span>
+                  <span class="final-price">$ 220.000 ARS</span>
+                </div>
+              </a>
+            </footer>
+          </article>
+
+          <!-- PLAN EMERALD / E-COMMERCE -->
+          <article class="card diamond-card">
+            <header class="card-header">
+              <span class="popular-badge">VENTAS</span>
+              <h3>PLAN DIAMOND</h3>
+            </header>
+            
+            <div class="card-body">
+              <div class="ideal-for">
+                <h4>IDEAL PARA:</h4>
+                <p>Pensado para negocios y marcas que quieren vender productos online. Catálogo digital optimizado para pedidos rápidos vía WhatsApp o carrito directo.</p>
+              </div>
+              
+              <div class="includes">
+                <h4>INCLUYE:</h4>
+                <ul class="feature-list">
+                  <li class="highlight-green">Incluye todo lo del PLAN EMERALD</li>
+                  <li>Catálogo de productos organizado por categorías</li>
+                  <li>Buscador y filtros integrados para productos</li>
+                  <li>Botonera de pedido directo al carrito / WhatsApp</li>
+                  <li>Integración con Mercado Pago (opcional)</li>
+                  <li>Panel o capacitación básica para actualizar tu stock</li>
+                </ul>
+              </div>
+  <!--             
+              <div class="pricing-details">
+                <div class="price-col">
+                  <span class="label">PRECIO REAL</span>
+                  <span class="value old-price">$ 850.000</span>
+                </div>
+                <div class="price-col">
+                  <span class="label">DESCUENTO</span>
+                  <span class="value green-text">40% OFF</span>
+                </div>
+                <div class="price-col">
+                  <span class="label">AHORRAS</span>
+                  <span class="value green-text">$ 510.000</span>
+                </div>
+              </div>
+              -->
+            </div>
+            
+            <footer class="card-footer">
+              <a href="https://wa.me/5493743615520?text=Hola,%20quiero%20contratar%20el%20Plan%20Emerald%20(E-Commerce)." target="_blank" rel="noopener noreferrer" class="checkout-box diamond-checkout">
+                <div class="tag-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                </div>
+                <div class="checkout-text">
+                  <span class="solo-pagas">CONTRATAR PLAN</span>
+                  <span class="final-price">$ 840.000 ARS</span>
+                </div>
+              </a>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  <!--   
+    <section id="portafolio" class="portfolio">
+
+      <div class="section container">
+        
+        <h2 class="h2-center">Trabajos terminados</h2>
+
+        <div class="portfolio-container">
+          
+          <article class="portfolio-card diamond-card">
+            <span class="portfolio-title"> DIAMOND</span>
+            
+            <div class="portfolio-preview">
+              
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
+                  
+                  <image
+                    href="assets/imagen/santacruzgestodesktop.png"
+                    x="25"
+                    y="15"
+                    width="250"
+                    height="160"
+                    clip-path="url(#screen-pc)"
+                    preserveAspectRatio="xMidYMid slice" />
+                  
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
+                  
+                  <image href="assets/imagen/santacruzgestormobile.png" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="card-content">
+              <h2>Plataforma E-Commerce</h2>
+              <a href="https://taskflow-santacruz.vercel.app/" class="btn" target="_blank" rel="noopener">
+                Ver página
+              </a>
+            </div>
+
+          </article>
+          
+          <article class="portfolio-card gold-card">
+            <span class="portfolio-title"> GOLD</span>
+            
+            <div class="portfolio-preview">
+              
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
+                  
+                  <image href="assets/imagen/santacruzdesktop.png" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
+                  
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
+                  
+                  <image href="assets/imagen/santacruzmobile.png" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="card-content">
+              <h2>Plataforma E-Commerce</h2>
+              <a href="https://santacruzprogramador.github.io/portfolio-santacruz/" class="btn" target="_blank" rel="noopener">
+                Ver página
+              </a>
+            </div>
+
+          </article>
+          
+          <article class="portfolio-card diamond-card">
+            <span class="portfolio-title"> DIAMOND</span>
+            
+            <div class="portfolio-preview">
+              
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
+                  
+                  <image href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=250&h=160&q=80" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
+                  
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
+                  
+                  <image href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=130&h=240&q=80" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="card-content">
+              <h2>Plataforma E-Commerce</h2>
+              <a href="#" class="btn">Ver página</a>
+            </div>
+
+          </article>
+          
+          <article class="portfolio-card gold-card">
+            <span class="portfolio-title"> GOLD</span>
+            
+            <div class="portfolio-preview">
+              
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
+                  
+                  <image href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=250&h=160&q=80" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
+                  
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
+                  
+                  <image href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=130&h=240&q=80" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="card-content">
+              <h2>Plataforma E-Commerce</h2>
+              <a href="#" class="btn">Ver página</a>
+            </div>
+
+          </article>
+          
+          <article class="portfolio-card diamond-card">
+            <span class="portfolio-title"> DIAMOND</span>
+            
+            <div class="portfolio-preview">
+              
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc)" />
+                  
+                  <image href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=250&h=160&q=80" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc)" preserveAspectRatio="xMidYMid slice" />
+                  
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile)" />
+                  
+                  <image href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=130&h=240&q=80" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="card-content">
+              <h2>Plataforma E-Commerce</h2>
+              <a href="#" class="btn">Ver página</a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+    --> 
+
+    <section id="promociones" class="promotions">
+      <div class="section container">
+        
+      <h2 class="h2-center promo-eyebrow">OFERTA POR TIEMPO LIMITADO</h2>
+
+      <div class="promo-box sesction">
+        
+
+        <p class="promo-text">
+          Elegí una de nuestras páginas y la adaptamos a tu negocio con tu
+          <strong>logo, colores, contenido e información de contacto.</strong>
+        </p>
+
+        <p class="promo-action">
+          Elegí tu página y empezá tu proyecto.
+        </p>
+      </div>
+
+
+
+        <div class="portfolio-container">
+
+          <article class="portfolio-card gold-card">
+            <span class="portfolio-title"> GOLD</span>
+                      
+            <div class="portfolio-preview">
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc-gold">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
+                  <image href="assets/imagen/lexora-gold-01-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile-gold">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
+                  <image href="assets/imagen/lexora-gold-01-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="card-content-promotions">
+              
+              <div class="promo-price">
+                <del class="old-price">$350.000 <small>ARS</small></del>
+                <strong class="new-price">$80.000 <small>ARS</small></strong>
+              </div>
+                <!--  <h2>Paquete Web Gold</h2> -->
+
+              <div class="card-actions">
+                <a
+                  href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%201"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Solicitar
+                </a>
+
+                <a
+                  href="https://lexora-gold-01.vercel.app/"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver  página
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+          <article class="portfolio-card gold-card">
+            <span class="portfolio-title"> GOLD</span>
+                      
+            <div class="portfolio-preview">
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc-gold">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
+                  <image href="assets/imagen/lexora-gold-02-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile-gold">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
+                  <image href="assets/imagen/lexora-gold-02-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="card-content-promotions">
+              
+            <div class="promo-price">
+              <del class="old-price">$350.000 <small>ARS</small></del>
+              <strong class="new-price">$80.000 <small>ARS</small></strong>
+            </div>
+            <!--  <h2>Paquete Web Gold</h2> -->
+
+
+            <div class="card-actions">
+              <a
+                href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%202"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Solicitar
+              </a>
+
+              <a
+                href="https://lexora-gold-02.vercel.app/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver  página
+              </a>
+            </div>
+
+
+            </div>
+          </article>
+
+          <article class="portfolio-card gold-card">
+            <span class="portfolio-title"> GOLD</span>
+                      
+            <div class="portfolio-preview">
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc-gold">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
+                  <image href="assets/imagen/lexora-gold-03-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile-gold">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
+                  <image href="assets/imagen/lexora-gold-03-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="card-content-promotions">
+              
+            <div class="promo-price">
+              <del class="old-price">$350.000 <small>ARS</small></del>
+              <strong class="new-price">$80.000 <small>ARS</small></strong>
+            </div>
+              <!--  <h2>Paquete Web Gold</h2> -->
+
+              <div class="card-actions">
+                <a
+                  href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%203"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Solicitar
+                </a>
+
+                <a
+                  href="https://lexora-gold-03.vercel.app/"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver  página
+                </a>
+              </div>
+
+
+            </div>
+          </article>
+
+          <article class="portfolio-card gold-card">
+            <span class="portfolio-title"> GOLD</span>
+                      
+            <div class="portfolio-preview">
+              <div class="svg-desktop">
+                <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-pc-gold">
+                      <rect x="25" y="15" width="250" height="160" rx="4" />
+                    </clipPath>
+                  </defs>
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
+                  <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
+                  <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
+                  <image href="assets/imagen/lexora-gold-04-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
+                  <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
+                  <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
+                </svg>
+              </div>
+
+              <div class="svg-mobile">
+                <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="screen-mobile-gold">
+                      <rect x="15" y="40" width="130" height="240" rx="6" />
+                    </clipPath>
+                  </defs>
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
+                  <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
+                  <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
+                  <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
+                  <image href="assets/imagen/lexora-gold-04-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="card-content-promotions">
+              
             <div class="promo-price">
               <del class="old-price">$350.000 <small>ARS</small></del>
               <strong class="new-price">$80.000 <small>ARS</small></strong>
@@ -799,7 +1031,7 @@
 
             <div class="card-actions">
               <a
-                href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%201"
+                href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%204"
                 class="btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -808,226 +1040,23 @@
               </a>
 
               <a
-                href="https://lexora-gold-01.vercel.app/"
+                href="https://lexora-gold-04.vercel.app/"
                 class="btn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ver  página
-              </a>
-            </div>
-
-          </div>
-        </article>
-
-        <article class="portfolio-card gold-card">
-          <span class="portfolio-title"> GOLD</span>
-                    
-          <div class="portfolio-preview">
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc-gold">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
-                <image href="assets/imagen/lexora-gold-02-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile-gold">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
-                <image href="assets/imagen/lexora-gold-02-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-content-promotions">
-            
-          <div class="promo-price">
-            <del class="old-price">$350.000 <small>ARS</small></del>
-            <strong class="new-price">$80.000 <small>ARS</small></strong>
-          </div>
-           <!--  <h2>Paquete Web Gold</h2> -->
-
-
-          <div class="card-actions">
-            <a
-              href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%202"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Solicitar
-            </a>
-
-            <a
-              href="https://lexora-gold-02.vercel.app/"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver  página
-            </a>
-          </div>
-
-
-          </div>
-        </article>
-
-        <article class="portfolio-card gold-card">
-          <span class="portfolio-title"> GOLD</span>
-                    
-          <div class="portfolio-preview">
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc-gold">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
-                <image href="assets/imagen/lexora-gold-03-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
-            </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile-gold">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
-                <image href="assets/imagen/lexora-gold-03-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-content-promotions">
-            
-          <div class="promo-price">
-            <del class="old-price">$350.000 <small>ARS</small></del>
-            <strong class="new-price">$80.000 <small>ARS</small></strong>
-          </div>
-            <!--  <h2>Paquete Web Gold</h2> -->
-
-            <div class="card-actions">
-              <a
-                href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%203"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Solicitar
-              </a>
-
-              <a
-                href="https://lexora-gold-03.vercel.app/"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver  página
+                Ver página web
               </a>
             </div>
 
 
-          </div>
-        </article>
-
-        <article class="portfolio-card gold-card">
-          <span class="portfolio-title"> GOLD</span>
-                    
-          <div class="portfolio-preview">
-            <div class="svg-desktop">
-              <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-pc-gold">
-                    <rect x="25" y="15" width="250" height="160" rx="4" />
-                  </clipPath>
-                </defs>
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="#2c2c2c" />
-                <rect x="20" y="10" width="260" height="170" rx="8" fill="none" stroke="#444" stroke-width="2" />
-                <rect x="25" y="15" width="250" height="160" rx="4" fill="#1a1a1a" clip-path="url(#screen-pc-gold)" />
-                <image href="assets/imagen/lexora-gold-04-desktop.webp" x="25" y="15" width="250" height="160" clip-path="url(#screen-pc-gold)" preserveAspectRatio="xMidYMid slice" />
-                <rect x="130" y="180" width="40" height="20" rx="3" fill="#2c2c2c" />
-                <rect x="110" y="195" width="80" height="10" rx="4" fill="#2c2c2c" />
-              </svg>
             </div>
-
-            <div class="svg-mobile">
-              <svg viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <clipPath id="screen-mobile-gold">
-                    <rect x="15" y="40" width="130" height="240" rx="6" />
-                  </clipPath>
-                </defs>
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="#1c1c1e" />
-                <rect x="10" y="10" width="140" height="300" rx="16" fill="none" stroke="#3a3a3c" stroke-width="2" />
-                <path d="M60 12 h40 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#1c1c1e" />
-                <rect x="15" y="40" width="130" height="240" rx="6" fill="#000" clip-path="url(#screen-mobile-gold)" />
-                <image href="assets/imagen/lexora-gold-04-mobile.webp" x="15" y="40" width="130" height="240" clip-path="url(#screen-mobile-gold)" preserveAspectRatio="xMidYMid slice" />
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-content-promotions">
-            
-          <div class="promo-price">
-            <del class="old-price">$350.000 <small>ARS</small></del>
-            <strong class="new-price">$80.000 <small>ARS</small></strong>
-          </div>
-            <!--  <h2>Paquete Web Gold</h2> -->
-
-          <div class="card-actions">
-            <a
-              href="https://wa.me/543743615520?text=Quiero%20la%20p%C3%A1gina%20Lexora%204"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Solicitar
-            </a>
-
-            <a
-              href="https://lexora-gold-04.vercel.app/"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver página web
-            </a>
-          </div>
-
-
-          </div>
-        </article>
-        
+          </article>
+          
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container footer-content">
